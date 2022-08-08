@@ -1,0 +1,21 @@
+﻿Our topic is to study the relationship between the total Covid-19 cases from January 3rd to July 29th in the U.S. and the performance of different industry sectors. We obtained the data on total Covid-19 cases from the CDC(Centers for Disease Control and Prevention) website. Besides, we decided to select eight representative industry ETFs to analyze how those sectors performed. 
+
+
+The following are the eight industry indexes we have selected:
+1. VNQ (Vanguard Real Estate ETF), focuses on U.S. real estate market.
+2. IHI (iShares U.S. Medical Devices ETF), focuses on medical device makers.
+3. VHT (Vanguard Health Care ETF), focuses on the pharmaceutical industry.
+4. XLI (Industrial Select Sector SPDR Fund), includes companies from the industry groups of the industrial sector, such as capital goods, commercial & professional services, and transportation.
+5. XLK (Technology Select Sector SPDR Fund), includes market segments like IT services, wireless telecommunication services, and semiconductors.
+6. IYE (iShares U.S. Energy ETF), tracks the investment results of an index composed of U.S. equities in the energy sector.
+7. XLY (Consumer Discretionary Select Sector SPDR Fund), invests in companies that sell nonessential (elastic) goods and services.
+8. XLP (Consumer Staples Select Sector SPDR Fund), invests in companies that sell essential (inelastic) goods and services.
+
+
+Firstly, we downloaded the historical data of each selected ETFs from Yahoo Finance, and we chose the adjusted closing price as the target data. Then we obtained the daily total cases in the U.S. of Covid-19 data from the CDC website. By comparing the data length of 2 sets of data, we noticed that there was no data for those ETFs on non-trading days. Therefore, we removed the non-trading day data of total Covid-19 cases to combine and establish the new database. There are 144 reading days in total from January 3rd to July 29th. Finally, we created the csv file of new database by combining historical prices and total Covid-19 cases.
+
+
+
+Data References:
+https://covid.cdc.gov/covid-data-tracker/#trends_totalcases_select_00
+https://finance.yahoo.com/
